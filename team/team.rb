@@ -1,7 +1,7 @@
 class Team
 
-  attr_reader :name, :points
-  attr_accessor :players, :coach
+  attr_reader :name, :players, :points
+  attr_accessor :coach
 
   def initialize(input_name, input_players, input_coach)
     @name = input_name
@@ -21,6 +21,12 @@ class Team
       end
     end
     return false
+  end
+
+  def update_points(result)
+    if (result == "won")
+      @points += 3
+    end
   end
 #
 end
