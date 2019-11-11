@@ -8,5 +8,10 @@ class StudentTests < MiniTest::Test
     student = Student.new("Gregor", "G16")
   end
 
+  def test_name
+    student = Student.new("Stephen", "G16")
+    assert_equal("Stephen", student.name)
+  end
+
 #
 end

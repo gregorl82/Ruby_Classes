@@ -5,5 +5,9 @@ class Student
     @cohort = input_cohort
   end
 
+  def name
+    return @name
+  end
+
 #
 end
