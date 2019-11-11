@@ -9,5 +9,9 @@ class Team
   def name
     return @name
   end
+
+  def players
+    return @players
+  end
 #
 end
