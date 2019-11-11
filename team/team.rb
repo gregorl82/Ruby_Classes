@@ -6,5 +6,8 @@ class Team
     @coach = input_coach
   end
 
+  def name
+    return @name
+  end
 #
 end
