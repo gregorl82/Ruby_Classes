@@ -24,12 +24,10 @@ class Library
   end
 
   def rental_details(book_title)
-    for book in @books
-      if (book[:title] == book_title)
-        return book[:rental_details]
-      end
+    book = book_info(book_title)
+    if book != "Book not found"
+      return book[:rental_details]
     end
-    else return "Book not found"
   end
 
   def change_rental_details(book_title, name, due_date)
