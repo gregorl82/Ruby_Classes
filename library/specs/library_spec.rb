@@ -38,8 +38,7 @@ class LibraryTests < MiniTest::Test
   def test_rental_details
     library = Library.new()
     library.add_book("wuthering_heights")
-    library.change_rental_details("wuthering_heights", "Jack", "06/12/2019")
-    expected_output = {student_name: "Jack", date: "06/12/2019"}
+    expected_output = {student_name: "", date: ""}
     assert_equal(expected_output, library.rental_details("wuthering_heights"))
   end
 

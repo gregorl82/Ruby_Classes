@@ -20,7 +20,7 @@ class Library
         return book
       end
     end
-  else return "Book not found"
+    return "Book not found"
   end
 
   def rental_details(book_title)
