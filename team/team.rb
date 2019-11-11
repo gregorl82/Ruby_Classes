@@ -12,5 +12,14 @@ class Team
   def add_new_player(new_player)
     @players.push(new_player)
   end
+
+  def has_player?(player_to_find)
+    for player in @players
+      if (player == player_to_find)
+        return true
+      end
+    end
+    return false
+  end
 #
 end
