@@ -23,5 +23,12 @@ class TeamTests < MiniTest::Test
     team = Team.new("No Hope United",["Bob", "Mick", "Lee", "Dave", "Chas"],"Alex Ferguson")
     assert_equal("Alex Ferguson", team.coach)
   end
+
+  def test_set_coach
+    team = Team.new("No Hope United",["Bob", "Mick", "Lee", "Dave", "Chas"],"Alex Ferguson")
+    team.set_coach("Jose Mourinho")
+    assert_equal("Jose Mourinho", team.coach)
+  end
+
 #
 end
